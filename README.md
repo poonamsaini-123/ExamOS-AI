@@ -14,12 +14,28 @@ An AI-powered exam preparation assistant that helps users analyze resumes, proce
 
 ```
 ExamOS-AI/
-│── backend/
-│── frontend/
-│── agents/
-│── requirements.txt
-│── .gitignore
-│── README.md
+│
+├── agents/
+│   └── examos-agent/
+│       ├── examos-agent.json
+│       └── instruction.md
+│
+├── backend/
+│   ├── __init__.py
+│   ├── ats_engine.py
+│   ├── gemini_service.py
+│   ├── main.py
+│   └── pdf_reader.py
+│
+├── frontend/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ## Installation
