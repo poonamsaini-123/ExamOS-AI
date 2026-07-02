@@ -1,75 +1,66 @@
-# ExamOS-AI
+**Problem Statement: AI-powered Resume Intelligence & Career Guidance**
 
-An AI-powered exam preparation assistant that helps users analyze resumes, process PDFs, and interact with AI for academic support.
+ExamOS AI is an intelligent resume analysis platform that transforms traditional resumes into actionable career insights using AI.
 
-## Features
+# 🚀 ExamOS AI – Intelligent Resume Analyzer
 
-* 📄 PDF reading and text extraction
-* 🤖 AI-powered responses using Gemini
-* 📊 ATS resume analysis
-* 🌐 Simple web interface
-* 📁 Clean backend and frontend structure
+> AI-powered Resume Analysis Platform built using **FastAPI**, **Lemma AI**, and **Python** to provide detailed resume insights, ATS evaluation, skill extraction, interview preparation, and personalized career guidance.
 
-## Project Structure
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)
+![AI](https://img.shields.io/badge/Lemma-AI-purple)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-```
-ExamOS-AI/
-│
-├── agents/
-│   └── examos-agent/
-│       ├── examos-agent.json
-│       └── instruction.md
-│
-├── backend/
-│   ├── __init__.py
-│   ├── ats_engine.py
-│   ├── gemini_service.py
-│   ├── main.py
-│   └── pdf_reader.py
-│
-├── frontend/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-│
-├── .gitignore
-├── LICENSE
-├── README.md
-└── requirements.txt
-```
+---
 
-## Installation
+# 📖 Overview
 
-1. Clone the repository
+Recruiters spend only a few seconds reviewing each resume.
 
-```bash
-git clone https://github.com/poonamsaini-123/ExamOS-AI.git
-```
+**ExamOS AI** helps students and job seekers instantly understand how strong their resume is by generating an AI-powered analysis.
 
-2. Install dependencies
+The system extracts resume content from a PDF, analyzes it using an AI agent, and produces an easy-to-understand report including:
 
-```bash
-pip install -r requirements.txt
-```
+- Professional Summary
+- Skills Extraction
+- ATS Evaluation
+- Missing Skills
+- Resume Improvement Suggestions
+- Interview Questions
+- Personalized Learning Roadmap
 
-3. Create a `.env` file and add your API keys.
+---
 
-4. Run the application
+# ✨ Features
 
-```bash
-python backend/main.py
-```
+✅ Upload Resume (PDF)
 
-## Technologies Used
+✅ Automatic Text Extraction
 
-* Python
-* HTML
-* CSS
-* JavaScript
-* Google Gemini API
+✅ AI-Powered Resume Analysis
 
-## Author
+✅ ATS Score Calculation
 
-**Poonam Saini**
+✅ Technical & Soft Skill Extraction
 
-GitHub: https://github.com/poonamsaini-123
+✅ Missing Skill Detection
+
+✅ Resume Improvement Suggestions
+
+✅ Personalized Learning Roadmap
+
+## Architecture Diagram
+
+![Architecture](images/architecture.png)
+
+### Workflow
+
+1. User uploads a resume through the frontend.
+2. FastAPI backend receives the PDF.
+3. PDF Reader extracts text from the uploaded resume.
+4. ATS Engine calculates the ATS score and extracts skills.
+5. Gemini AI Service generates detailed AI-powered resume analysis.
+6. FastAPI combines all results into a JSON response.
+7. The frontend displays the ATS score, skills, missing skills, suggestions, and AI analysis.
+
+✅ Interview Question Generation
