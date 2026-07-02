@@ -51,7 +51,7 @@ The system extracts resume content from a PDF, analyzes it using an AI agent, an
 
 ## Architecture Diagram
 
-![Architecture](images/architecture.png)
+![Architecture](images/architecture-diagram.png)
 
 ### Workflow
 
