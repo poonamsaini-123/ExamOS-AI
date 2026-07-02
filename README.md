@@ -61,6 +61,149 @@ The system extracts resume content from a PDF, analyzes it using an AI agent, an
 4. ATS Engine calculates the ATS score and extracts skills.
 5. Gemini AI Service generates detailed AI-powered resume analysis.
 6. FastAPI combines all results into a JSON response.
-7. The frontend displays the ATS score, skills, missing skills, suggestions, and AI analysis.
+7. The front## Project Structure
 
+```
+ExamOS-AI/
+│
+├── agents/
+│   └── examos-agent/
+│       ├── examos-agent.json
+│       └── instruction.md
+│
+├── backend/
+│   ├── __init__.py
+│   ├── ats_engine.py
+│   ├── gemini_service.py
+│   ├── main.py
+│   └── pdf_reader.py
+│
+├── frontend/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
+```end displays the ATS score, skills, missing skills, suggestions, and AI analysis.
+
+# ⚙ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ExamOS-AI.git
+```
+
+Move into project
+
+```bash
+cd ExamOS-AI
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run backend
+
+```bash
+uvicorn backend.main:app --reload
+```
+
+Open frontend
+
+```
+frontend/index.html
+```
+# 📊 Sample Output
+
+The API returns structured JSON similar to:
+
+```json
+{
+  "filename": "resume.pdf",
+  "analysis": {
+    "analysis_raw": "...",
+    "ats_score": 75,
+    "skills": [
+      "Python",
+      "SQL",
+      "Machine Learning"
+    ],
+    "missing_skills": [
+      "Cloud",
+      "System Design"
+    ],
+    "suggestions": [
+      "Add measurable achievements",
+      "Improve project descriptions"
+    ]
+  }
+}
+```
+
+---
+
+# 🎯 Use Cases
+
+- Resume Evaluation
+- Internship Preparation
+- Campus Placements
+- AI-powered Career Guidance
+- ATS Readiness
+- Skill Gap Analysis
+
+# 💡 Future Improvements
+
+- DOCX Support
+- Multiple Resume Templates
+- Resume Comparison
+- Company-specific ATS Analysis
+- Cover Letter Generator
+- LinkedIn Profile Analysis
+- Job Description Matching
+- AI Chat Assistant
+- Resume Ranking System
+- Interactive Dashboard
+
+------# 👩‍💻 Developed By
+
+**Poonam Saini**
+
+B.Tech CSE (AI/ML)
+
+Rayat Bahra University
+
+GitHub:
+https://github.com/poonamsaini-123
+
+LinkedIn:
+https://www.linkedin.com/in/poonam-saini-986058340
+
+---
+
+# 🌟 Why ExamOS AI?
+
+Unlike a simple PDF parser, ExamOS AI combines document processing with AI-powered reasoning to provide actionable career insights.
+
+It not only extracts resume information but also helps users understand:
+
+- What recruiters look for
+- Which skills are missing
+- How to improve the resume
+- What interview questions to expect
+- What to learn next
+
+This transforms a static resume into an intelligent career guidance report.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
 ✅ Interview Question Generation
